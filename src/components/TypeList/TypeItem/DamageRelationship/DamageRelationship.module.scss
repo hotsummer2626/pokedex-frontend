@@ -1,0 +1,45 @@
+@import "/src/mixins/flex.scss";
+
+.outer {
+  @include flex_center;
+  .container {
+    background: #2d262b;
+    width: 95%;
+    height: 80%;
+    border-radius: 30rem;
+    padding: 30rem 40rem;
+    .header {
+      @include flex_center;
+      justify-content: space-between;
+      margin-bottom: 30rem;
+      .imgWrapper {
+        @include flex_center;
+        width: 90rem;
+        height: 90rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        img {
+          width: 80rem;
+        }
+      }
+      .closeIcon {
+        color: #fff;
+        font-size: 60rem;
+      }
+    }
+    .strength,
+    .weakness {
+      text-align: center;
+      font-size: 50rem;
+      font-weight: bold;
+      color: #fff;
+      height: 450rem;
+      .typeList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+        padding-top: 30rem;
+      }
+    }
+  }
+}

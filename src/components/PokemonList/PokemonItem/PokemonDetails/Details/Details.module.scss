@@ -1,0 +1,14 @@
+@import "/src/mixins/transition.scss";
+
+.container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 680rem;
+  padding: 90rem 50rem 0;
+  border-top-left-radius: 60rem;
+  border-top-right-radius: 60rem;
+  background: #2b292c;
+}
+
+@include right_in_left_out_fade;

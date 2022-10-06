@@ -1,0 +1,14 @@
+.container {
+  color: #fff;
+  font-size: 35rem;
+  text-align: center;
+  display: grid;
+  gap: 10rem;
+  .listItem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  .name{
+    color: rgb(191, 191, 191);
+  }
+  }
+}

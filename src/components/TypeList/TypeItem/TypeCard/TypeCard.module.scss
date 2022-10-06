@@ -1,0 +1,26 @@
+@import "/src/mixins/flex.scss";
+
+.container {
+  @include flex_center;
+  justify-content: space-between;
+  padding: 0 40rem 0 20rem;
+  border-radius: 20rem;
+  .imgWrapper {
+    @include flex_center;
+    width: 90rem;
+    height: 90rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    img {
+      width: 80rem;
+    }
+  }
+  .name {
+    font-size: 30rem;
+    font-weight: bold;
+    background: #fff;
+    padding: 3rem 10rem;
+    border-radius: 10rem;
+    color: #000;
+  }
+}

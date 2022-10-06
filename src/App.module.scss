@@ -1,0 +1,24 @@
+@import "/src//mixins/flex.scss";
+
+.container {
+  width: 750rem;
+  height: 100vh;
+  background: #d53b47;
+  .header {
+    @include flex_center;
+    justify-content: space-between;
+    padding: 60rem 50rem 0;
+    h1 {
+      font-size: 60rem;
+      color: #fff;
+    }
+  }
+  .content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1150rem;
+    padding: 20rem;
+    background: #2d262b;
+  }
+}
